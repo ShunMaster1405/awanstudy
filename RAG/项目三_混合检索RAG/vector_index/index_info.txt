@@ -1,0 +1,3 @@
+num_documents: 4
+dense_dim: 384
+sparse_features: 79

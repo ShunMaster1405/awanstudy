@@ -1,0 +1,15 @@
+# 核心依赖
+langchain==0.1.0
+langchain-community==0.0.10
+langchain-openai==0.0.2
+python-dotenv==1.0.0
+openai>=1.6.1,<2.0.0
+tiktoken>=0.5.2,<0.6.0
+numpy==1.24.3
+
+# 可选依赖（演示用，可以跳过）
+# faiss-cpu==1.7.4
+# sentence-transformers==2.2.2
+# pymupdf==1.23.8
+# markdown==3.5.1
+# pandas==2.0.3

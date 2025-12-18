@@ -1,0 +1,46 @@
+跨模态检索（Cross-modal Retrieval）
+
+跨模态检索是一种信息检索技术，它允许用户使用一种模态的查询（如文本）来检索另一种模态的内容（如图像），反之亦然。这种技术在多模态信息系统中起着关键作用。
+
+检索类型：
+1. 文本到图像检索（Text-to-Image Retrieval）：使用文本描述检索相关图像
+2. 图像到文本检索（Image-to-Text Retrieval）：使用图像检索相关文本描述
+3. 图像到图像检索（Image-to-Image Retrieval）：使用图像检索相似图像
+4. 文本到文本检索（Text-to-Text Retrieval）：传统的信息检索
+5. 多模态混合检索（Multimodal Hybrid Retrieval）：结合多种模态的查询
+
+关键技术：
+1. 共享嵌入空间（Shared Embedding Space）：将不同模态映射到同一向量空间
+2. 对比学习（Contrastive Learning）：学习模态间的对应关系
+3. 注意力机制（Attention Mechanism）：关注查询和文档的重要部分
+4. 图神经网络（Graph Neural Networks）：建模模态间的复杂关系
+5. 生成对抗网络（GANs）：生成跨模态内容
+
+核心模型：
+1. CLIP（Contrastive Language-Image Pre-training）：OpenAI的对比语言-图像预训练模型
+2. ALIGN（A Large-scale ImaGe and Noisy-text embedding）：谷歌的大规模图像-文本嵌入模型
+3. BLIP（Bootstrapping Language-Image Pre-training）：引导语言-图像预训练模型
+4. Florence：微软的统一视觉-语言基础模型
+5. ViLBERT：视觉-语言BERT模型
+
+评估指标：
+1. 平均精度均值（mAP）：检索精度的综合指标
+2. 召回率@K（Recall@K）：前K个结果中的相关文档比例
+3. 归一化折损累计增益（nDCG）：考虑排序位置的评估指标
+4. 平均倒数排名（MRR）：第一个相关结果排名的倒数平均值
+5. 精确率-召回率曲线（PR Curve）：精度和召回率的权衡
+
+应用场景：
+1. 电商搜索：用文字描述搜索商品图片
+2. 内容审核：图像和文本联合分析
+3. 教育领域：图文教材检索
+4. 媒体分析：新闻图文内容理解
+5. 医疗影像：医学图像与报告关联
+6. 社交媒体：多模态内容推荐
+
+挑战与展望：
+- 模态鸿沟（Modality Gap）：不同模态间的语义差异
+- 数据稀缺：高质量跨模态标注数据不足
+- 计算复杂度：大规模跨模态检索的计算需求
+- 实时性：在线检索的响应时间要求
+- 可解释性：检索结果的可解释性分析
